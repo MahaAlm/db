@@ -1,11 +1,14 @@
 package com.example.lab4;
 
-public class customerModel {
+public class StudentMod {
     private int id;
     private String name;
     private int age;
 
-    public customerModel(int id, String name, int age) {
+    public StudentMod() {
+    }
+
+    public StudentMod(int id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -13,7 +16,7 @@ public class customerModel {
 
     @Override
     public String toString() {
-        return "customerModel{" +
+        return "StudentMod{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
@@ -23,9 +26,7 @@ public class customerModel {
     public int getId() {
         return id;
     }
-    public customerModel() {
 
-    }
     public void setId(int id) {
         this.id = id;
     }
